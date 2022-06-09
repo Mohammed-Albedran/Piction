@@ -49,6 +49,7 @@ body{
     display: block;
     font-family: 'Varela Round', sans-serif;
     transition: 0.3s;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #sideList #close{
     /* background-color: blue; */
