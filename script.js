@@ -5,24 +5,29 @@ var menuStatue = false;
 openMenu.onclick = ()=>{
     if(menuStatue == false){
         sideList.style.right = "0";
+        sideList.style.boxShadow = "0 0 0 100vmax rgb(0 0 0 / .5), 0 0 2rem rgb(0 0 0 / 0.5)";
         menuStatue = true;
     }else if(menuStatue == true){
         sideList.style.right = "-220px";
+        sideList.style.boxShadow = "";
         menuStatue = false;
     }
 }
 closeMenu.onclick = ()=>{
     if(menuStatue == false){
         sideList.style.right = "0";
+        sideList.style.boxShadow = "0 0 0 100vmax rgb(0 0 0 / .5), 0 0 2rem rgb(0 0 0 / 0.5)";
         menuStatue = true;
     }else if(menuStatue == true){
         sideList.style.right = "-220px";
+        sideList.style.boxShadow = "";
         menuStatue = false;
     }
 }
 onresize = ()=>{
     if(menuStatue == true){
         sideList.style.right = "-220px";
+        sideList.style.boxShadow = "";
         menuStatue = false;
     }
 }
@@ -172,6 +177,7 @@ document.onclick = function(e){
     if(e.target.id !== "sideList" && e.target.id !== "icon1"){
         sideList.style.right = "-220px";
         menuStatue = false;
+        sideList.style.boxShadow = "";
     }
     if(e.target.id !== "aboutDiv" && e.target.id !== "aboutButton" && e.target.id !== "aboutButtonSlide"){
         aboutDiv.style.display = "none";
