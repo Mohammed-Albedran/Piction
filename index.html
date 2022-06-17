@@ -23,6 +23,7 @@
   <meta name="twitter:image:src" content="logo.jpg">
   <!-- //End twitter// -->
   <!--#endregion-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div id="about"><br>
@@ -52,18 +53,18 @@
     </div>
     <header id="firstHeader">
         <div id="menu"><ion-icon id="icon1" name="menu-outline"></ion-icon></div>
-        <h1>Piction</h1>
+        <h1 data-aos="fade-right">Piction</h1>
         <ul>
-            <li><h3><a href="#HowToUse">How to use</a></h3></li>
-            <li><h3><a href="privacypolicy.html" target="_blank">Privacy policy</a></h3></li>
-            <li onclick="openHistory('open');"><h3><a id="historyButton" href="#">History</a></h3></li>
-            <li><h3><a id="aboutButton" href="#firstHeader">About</a></h3></li>
-            <li><h3><a href="mailto:mohammed.albedran.business@gmail.com">Contact us</a></h3></li>
+            <li data-aos="fade-left"><h3><a href="#HowToUse">How to use</a></h3></li>
+            <li data-aos="fade-left"><h3><a href="privacypolicy.html" target="_blank">Privacy policy</a></h3></li>
+            <li data-aos="fade-left" onclick="openHistory('open');"><h3><a id="historyButton" href="#">History</a></h3></li>
+            <li data-aos="fade-left"><h3><a id="aboutButton" href="#firstHeader">About</a></h3></li>
+            <li data-aos="fade-left"><h3><a href="mailto:mohammed.albedran.business@gmail.com">Contact us</a></h3></li>
         </ul>
     </header>
     
-   <div id="home">
-         <main id="mainBox">
+   <div id="home" data-aos="fade-up">
+         <main id="mainBox" >
         <header>
             <input type="text" id="linkValue" placeholder="Youtube video link" />
             <select id="selectEl">
@@ -84,13 +85,13 @@
     <div id="HowToUse">
         <article>
             <ul>
-                <li><h2>Step one:</h2><br>
+                <li data-aos="fade-right"><h2>Step one:</h2><br>
         <h4>Copy the video link from youtube</h4></li>
-                <li><h2>Step two:</h2><br>
+                <li data-aos="fade-right"><h2>Step two:</h2><br>
         <h4>Paste the link in the text field</h4></li>
-                <li><h2>Step three:</h2><br>
+                <li data-aos="fade-right"><h2>Step three:</h2><br>
         <h4>Choose the image quality</h4></li>
-                <li><h2>Step Four:</h2><br>
+                <li data-aos="fade-right"><h2>Step Four:</h2><br>
         <h4>Click download</h4></li>
             </ul>
         
@@ -103,5 +104,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
